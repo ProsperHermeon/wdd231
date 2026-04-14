@@ -1,0 +1,76 @@
+{
+  "members": [
+    {
+      "name": "Prosper Coffee Roasters",
+      "address": "101 W Broadway St, Prosper, TX 75078",
+      "phone": "(469) 555-0101",
+      "website": "https://prospercoffee.example.com",
+      "image": "images/prosper-coffee.svg",
+      "membership": 3,
+      "description": "Locally roasted specialty coffee and a cozy community gathering space."
+    },
+    {
+      "name": "North Texas Auto Group",
+      "address": "450 N Preston Rd, Prosper, TX 75078",
+      "phone": "(972) 555-0234",
+      "website": "https://ntxauto.example.com",
+      "image": "images/north-texas-auto.svg",
+      "membership": 2,
+      "description": "Full-service auto dealership and repair center serving the Prosper area."
+    },
+    {
+      "name": "Heritage Realty Advisors",
+      "address": "220 E First St, Prosper, TX 75078",
+      "phone": "(469) 555-0378",
+      "website": "https://heritagerealty.example.com",
+      "image": "images/heritage-realty.svg",
+      "membership": 3,
+      "description": "Residential and commercial real estate brokerage with deep local roots."
+    },
+    {
+      "name": "Sunshine Pediatric Dentistry",
+      "address": "980 S Coleman St, Prosper, TX 75078",
+      "phone": "(214) 555-0456",
+      "website": "https://sunshinedental.example.com",
+      "image": "images/sunshine-dental.svg",
+      "membership": 1,
+      "description": "Friendly pediatric dental care for children and teens."
+    },
+    {
+      "name": "Lone Star Landscaping",
+      "address": "315 Coit Rd, Prosper, TX 75078",
+      "phone": "(972) 555-0599",
+      "website": "https://lonestarlandscaping.example.com",
+      "image": "images/lone-star-landscaping.svg",
+      "membership": 2,
+      "description": "Lawn care, hardscaping, and seasonal planting for homes and businesses."
+    },
+    {
+      "name": "Blue Sky Technology Solutions",
+      "address": "700 Gates of Prosper Blvd, Prosper, TX 75078",
+      "phone": "(469) 555-0612",
+      "website": "https://blueskytech.example.com",
+      "image": "images/bluesky-tech.svg",
+      "membership": 3,
+      "description": "Managed IT services, cloud migration, and cybersecurity consulting."
+    },
+    {
+      "name": "Prairie Creek Veterinary Clinic",
+      "address": "825 E University Dr, Prosper, TX 75078",
+      "phone": "(214) 555-0747",
+      "website": "https://prairiecreekvet.example.com",
+      "image": "images/prairie-vet.svg",
+      "membership": 1,
+      "description": "Compassionate veterinary medicine for companion and farm animals."
+    },
+    {
+      "name": "Main Street Bakery & Café",
+      "address": "55 S Main St, Prosper, TX 75078",
+      "phone": "(972) 555-0888",
+      "website": "https://mainstbakery.example.com",
+      "image": "images/mainst-bakery.svg",
+      "membership": 2,
+      "description": "Artisan breads, pastries, and light lunch served daily."
+    }
+  ]
+}
