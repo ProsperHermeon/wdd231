@@ -88,36 +88,61 @@
     <main>
       <h1 class="page-title">Directory</h1>
 
-      <div class="directory-controls">
-        <button
-          type="button"
-          class="toggle-btn active"
-          id="grid-btn"
-          aria-label="Grid view"
-          title="Grid view"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path
-              d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 0h7v7h-7z"
-            />
-          </svg>
-        </button>
-        <button
-          type="button"
-          class="toggle-btn"
-          id="list-btn"
-          aria-label="List view"
-          title="List view"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path
-              d="M3 4h18v2H3zm0 7h18v2H3zm0 7h18v2H3z"
-            />
-          </svg>
-        </button>
-      </div>
+      <section aria-labelledby="member-heading">
+        <h2 id="member-heading">Member Businesses</h2>
 
-      <ul id="directory"></ul>
+        <div class="directory-controls">
+          <button
+            type="button"
+            class="toggle-btn active"
+            id="grid-btn"
+            aria-label="Grid view"
+            title="Grid view"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 0h7v7h-7z"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="toggle-btn"
+            id="list-btn"
+            aria-label="List view"
+            title="List view"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M3 4h18v2H3zm0 7h18v2H3zm0 7h18v2H3z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <ul id="directory"></ul>
+      </section>
+
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About the Chamber</h2>
+        <p>
+          The Prosper Chamber of Commerce connects local businesses, fosters
+          networking opportunities, and advocates for economic growth
+          throughout Prosper, Texas and surrounding communities.
+        </p>
+      </section>
+
+      <section aria-labelledby="membership-heading">
+        <h2 id="membership-heading">Membership Levels</h2>
+        <p>
+          Our directory features three membership tiers:
+          <strong>Gold</strong> members receive premium visibility and
+          sponsorship benefits, <strong>Silver</strong> members enjoy
+          enhanced directory listings and event access, and
+          <strong>Member</strong> tier includes a standard directory listing
+          and community support.
+        </p>
+      </section>
     </main>
 
     <!-- ===== FOOTER ===== -->
