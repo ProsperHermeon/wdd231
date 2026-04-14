@@ -12,7 +12,7 @@
   --clr-nav-bg: #1a2332;
   --clr-nav-text: #f7fafc;
   --clr-gold: #d4a017;
-  --clr-silver: #718096;
+  --clr-silver: #5a6878;
   --clr-member: #4a5568;
   --font: "Source Sans 3", system-ui, sans-serif;
   --shadow: 0 1px 3px rgba(26, 35, 50, 0.08);
@@ -154,7 +154,7 @@ a:focus-visible {
 }
 
 #menu.open .bar {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
 }
 
 #menu.open .bar::before {
@@ -195,7 +195,7 @@ a:focus-visible {
   color: var(--clr-nav-text);
   text-decoration: none;
   font-weight: 600;
-  border-left: 4px solid transparent;
+  border-left: 4px solid rgba(0, 0, 0, 0);
   transition: background 0.15s, border-color 0.15s;
 }
 
@@ -365,10 +365,8 @@ main {
 }
 
 #directory.list-view .member-card {
-  flex-direction: row;
   text-align: left;
-  align-items: center;
-  gap: 1rem;
+  align-items: flex-start;
   border-radius: 0;
   border-bottom: 1px solid var(--clr-border);
   border-left: none;
@@ -392,8 +390,6 @@ main {
 
 #directory.list-view .member-card h2 {
   font-size: 1rem;
-  min-width: 0;
-  flex: 1;
 }
 
 #directory.list-view .member-card .member-detail {
