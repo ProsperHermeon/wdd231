@@ -5,7 +5,7 @@ const UNITS = "imperial";
 
 const currentTempEl = document.querySelector("#current-temp");
 const currentDescEl = document.querySelector("#current-desc");
-const currentIconEl = document.querySelector("#weather-icon");
+const weatherDisplay = document.querySelector("#weather-display");
 const forecastContainer = document.querySelector("#forecast");
 
 function capitalize(str) {
@@ -26,10 +26,14 @@ async function fetchWeather() {
     if (currentDescEl) {
       currentDescEl.textContent = capitalize(data.weather[0].description);
     }
-    if (currentIconEl) {
-      currentIconEl.src =
-        `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-      currentIconEl.alt = data.weather[0].description;
+    if (weatherDisplay) {
+      const icon = document.createElement("img");
+      icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      icon.alt = data.weather[0].description;
+      icon.width = 80;
+      icon.height = 80;
+      icon.loading = "lazy";
+      weatherDisplay.prepend(icon);
     }
   } catch {
     if (currentTempEl) currentTempEl.textContent = "N/A";
