@@ -928,6 +928,114 @@ dialog li {
   font-size: 1rem;
 }
 
+/* ===== DISCOVER PAGE ===== */
+#visit-message {
+  background: var(--clr-surface);
+  border-left: 4px solid var(--clr-primary);
+  padding: 0.85rem 1rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-weight: 600;
+  color: var(--clr-primary-dark);
+  margin: 0 0 1rem;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
+
+.discover-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.discover-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.discover-card h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--clr-primary-dark);
+}
+
+.discover-card figure {
+  margin: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.discover-card figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-size: 0.88rem;
+  color: var(--clr-muted);
+}
+
+.discover-card p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: var(--clr-muted);
+}
+
+.learn-more-btn {
+  align-self: flex-start;
+  font-family: var(--font);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.5rem 1.15rem;
+  border: 2px solid var(--clr-primary);
+  border-radius: var(--radius);
+  background: var(--clr-surface);
+  color: var(--clr-primary);
+  cursor: pointer;
+  min-height: var(--tap);
+  transition: background 0.2s, color 0.2s;
+}
+
+.learn-more-btn:hover {
+  background: var(--clr-primary);
+  color: #fff;
+}
+
+.learn-more-btn:focus-visible {
+  outline: 2px solid var(--clr-primary-dark);
+  outline-offset: 2px;
+}
+
 /* ===== UTILITY ===== */
 .sr-only {
   position: absolute;

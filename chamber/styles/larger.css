@@ -104,6 +104,29 @@
   }
 }
 
+/* ===== DISCOVER — MEDIUM (641–1024px) ===== */
+@media screen and (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+  }
+
+  .discover-card figure img {
+    transition: transform 0.35s ease, filter 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .discover-card figure:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.08) saturate(1.1);
+    box-shadow: 0 4px 14px rgba(26, 35, 50, 0.2);
+  }
+}
+
 @media screen and (min-width: 960px) {
   #directory {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -115,5 +138,16 @@
 
   .spotlights-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ===== DISCOVER — LARGE (1025px+) ===== */
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card4 card5"
+      "card6 card7 card8";
   }
 }

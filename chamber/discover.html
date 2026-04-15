@@ -6,30 +6,63 @@
     <title>Discover | Prosper Chamber of Commerce</title>
     <meta
       name="description"
-      content="Discover the history, demographics, and current events in Prosper, Texas."
+      content="Discover Prosper, Texas — explore local landmarks, parks, dining, and community attractions."
     />
     <meta name="author" content="Prosper" />
+
+    <meta property="og:title" content="Discover | Prosper Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Discover Prosper, Texas — explore local landmarks, parks, dining, and community attractions."
+    />
+    <meta property="og:image" content="https://prosperhermeon.github.io/wdd231/chamber/images/hero.svg" />
+    <meta
+      property="og:url"
+      content="https://prosperhermeon.github.io/wdd231/chamber/discover.html"
+    />
+
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
     <script src="scripts/date.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a href="index.html" class="branding">
-        <img class="logo" src="images/favicon.svg" width="44" height="44" alt="Prosper Chamber of Commerce logo" />
+        <img
+          class="logo"
+          src="images/favicon.svg"
+          width="44"
+          height="44"
+          alt="Prosper Chamber of Commerce logo"
+        />
         <span class="chamber-name">Prosper Chamber of Commerce</span>
       </a>
-      <button type="button" id="menu" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+      <button
+        type="button"
+        id="menu"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
         <span class="sr-only">Menu</span>
         <span class="bar" aria-hidden="true"></span>
       </button>
-      <nav id="primary-nav" class="site-nav" aria-label="Main navigation" aria-hidden="true">
+      <nav
+        id="primary-nav"
+        class="site-nav"
+        aria-label="Main navigation"
+        aria-hidden="true"
+      >
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
@@ -38,10 +71,32 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1 class="page-title">Discover</h1>
-      <p>Discover page content coming soon.</p>
+      <h1 class="page-title">Discover Prosper</h1>
+
+      <section aria-labelledby="visit-heading">
+        <h2 id="visit-heading">Visitor Info</h2>
+        <p id="visit-message">Loading&hellip;</p>
+      </section>
+
+      <section aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading">Places to Explore</h2>
+        <div id="discover-gallery" class="discover-grid"></div>
+      </section>
+
+      <section aria-labelledby="demo-heading">
+        <h2 id="demo-heading">Community Snapshot</h2>
+        <p>
+          Prosper is one of the fastest-growing towns in North Texas, located
+          in Collin and Denton counties. With a population that has tripled in
+          the last decade, Prosper offers top-rated schools, master-planned
+          communities, and a thriving local business scene — all just 40
+          minutes north of Dallas.
+        </p>
+      </section>
     </main>
+
     <footer class="site-footer">
       <div class="footer-grid">
         <div class="footer-contact">
