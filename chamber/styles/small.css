@@ -854,6 +854,11 @@ form button[type="submit"]:focus-visible {
   animation: fadeSlideUp 0.5s ease forwards;
 }
 
+.delay-1 { animation-delay: 0s; }
+.delay-2 { animation-delay: 0.15s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.45s; }
+
 /* ===== MODAL (dialog) ===== */
 dialog {
   max-width: min(90vw, 500px);
