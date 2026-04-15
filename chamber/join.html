@@ -6,30 +6,63 @@
     <title>Join | Prosper Chamber of Commerce</title>
     <meta
       name="description"
-      content="Learn about membership benefits and apply to join the Prosper Chamber of Commerce."
+      content="Apply to join the Prosper Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels."
     />
     <meta name="author" content="Prosper" />
+
+    <meta property="og:title" content="Join | Prosper Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Apply to join the Prosper Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels."
+    />
+    <meta property="og:image" content="https://prosperhermeon.github.io/wdd231/chamber/images/hero.svg" />
+    <meta
+      property="og:url"
+      content="https://prosperhermeon.github.io/wdd231/chamber/join.html"
+    />
+
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/date.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a href="index.html" class="branding">
-        <img class="logo" src="images/favicon.svg" width="44" height="44" alt="Prosper Chamber of Commerce logo" />
+        <img
+          class="logo"
+          src="images/favicon.svg"
+          width="44"
+          height="44"
+          alt="Prosper Chamber of Commerce logo"
+        />
         <span class="chamber-name">Prosper Chamber of Commerce</span>
       </a>
-      <button type="button" id="menu" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+      <button
+        type="button"
+        id="menu"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
         <span class="sr-only">Menu</span>
         <span class="bar" aria-hidden="true"></span>
       </button>
-      <nav id="primary-nav" class="site-nav" aria-label="Main navigation" aria-hidden="true">
+      <nav
+        id="primary-nav"
+        class="site-nav"
+        aria-label="Main navigation"
+        aria-hidden="true"
+      >
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
@@ -38,10 +71,214 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1 class="page-title">Join</h1>
-      <p>Membership application content coming soon.</p>
+      <h1 class="page-title">Join the Chamber</h1>
+
+      <div class="join-layout">
+        <!-- APPLICATION FORM -->
+        <section aria-labelledby="form-heading">
+          <h2 id="form-heading">Membership Application</h2>
+
+          <form method="get" action="thankyou.html">
+            <label for="first-name">First Name
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                title="Enter your first name"
+                autocomplete="given-name"
+                required
+              />
+            </label>
+
+            <label for="last-name">Last Name
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                title="Enter your last name"
+                autocomplete="family-name"
+                required
+              />
+            </label>
+
+            <label for="org-title">Organizational Title
+              <input
+                type="text"
+                id="org-title"
+                name="org-title"
+                title="Position title — letters, hyphens, and spaces only, at least 7 characters"
+                autocomplete="organization-title"
+                pattern="[a-zA-Z\- ]{7,}"
+              />
+            </label>
+
+            <label for="email">Email Address
+              <input
+                type="email"
+                id="email"
+                name="email"
+                title="Enter a valid email address"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required
+              />
+            </label>
+
+            <label for="phone">Mobile Phone
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                title="Enter your mobile phone number"
+                autocomplete="tel"
+                required
+              />
+            </label>
+
+            <label for="organization">Business / Organization Name
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                title="Enter the name of your business or organization"
+                autocomplete="organization"
+                required
+              />
+            </label>
+
+            <fieldset>
+              <legend>Membership Level</legend>
+              <label for="level-np">
+                <input type="radio" id="level-np" name="membership" value="np" required />
+                NP Membership (Non-Profit — No Fee)
+              </label>
+              <label for="level-bronze">
+                <input type="radio" id="level-bronze" name="membership" value="bronze" />
+                Bronze Membership
+              </label>
+              <label for="level-silver">
+                <input type="radio" id="level-silver" name="membership" value="silver" />
+                Silver Membership
+              </label>
+              <label for="level-gold">
+                <input type="radio" id="level-gold" name="membership" value="gold" />
+                Gold Membership
+              </label>
+            </fieldset>
+
+            <label for="description">Business Description
+              <textarea
+                id="description"
+                name="description"
+                title="Briefly describe your business or organization"
+                rows="4"
+              ></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp" />
+
+            <button type="submit">Submit Application</button>
+          </form>
+        </section>
+
+        <!-- MEMBERSHIP CARDS -->
+        <section aria-labelledby="levels-heading">
+          <h2 id="levels-heading">Membership Levels</h2>
+
+          <div class="level-cards">
+            <div class="level-card animate-in" style="animation-delay: 0s">
+              <h3>NP Membership</h3>
+              <p class="level-price">Free</p>
+              <p>For registered non-profit organizations.</p>
+              <button type="button" class="level-info-btn" data-modal="modal-np">Learn More</button>
+            </div>
+            <div class="level-card animate-in" style="animation-delay: 0.15s">
+              <h3>Bronze</h3>
+              <p class="level-price">$50 / year</p>
+              <p>Great for new and small businesses.</p>
+              <button type="button" class="level-info-btn" data-modal="modal-bronze">Learn More</button>
+            </div>
+            <div class="level-card animate-in" style="animation-delay: 0.3s">
+              <h3>Silver</h3>
+              <p class="level-price">$150 / year</p>
+              <p>Enhanced visibility and event access.</p>
+              <button type="button" class="level-info-btn" data-modal="modal-silver">Learn More</button>
+            </div>
+            <div class="level-card animate-in" style="animation-delay: 0.45s">
+              <h3>Gold</h3>
+              <p class="level-price">$300 / year</p>
+              <p>Premium benefits and spotlight placement.</p>
+              <button type="button" class="level-info-btn" data-modal="modal-gold">Learn More</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Keep audit happy: third section -->
+      <section aria-labelledby="why-heading">
+        <h2 id="why-heading">Why Join?</h2>
+        <p>
+          The Prosper Chamber of Commerce provides networking, marketing,
+          training, and advocacy to help local businesses thrive. Choose the
+          membership level that fits your goals and start connecting with the
+          Prosper business community today.
+        </p>
+      </section>
+
+      <!-- MODALS -->
+      <dialog id="modal-np">
+        <h2>NP Membership Benefits</h2>
+        <ul>
+          <li>Standard directory listing</li>
+          <li>Access to community networking events</li>
+          <li>Monthly newsletter subscription</li>
+          <li>Eligible for community service awards</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+      </dialog>
+
+      <dialog id="modal-bronze">
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+          <li>Everything in NP, plus:</li>
+          <li>Enhanced directory listing with logo</li>
+          <li>Invitations to quarterly luncheons</li>
+          <li>10% discount on event booth registration</li>
+          <li>Social media mention upon joining</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+      </dialog>
+
+      <dialog id="modal-silver">
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+          <li>Everything in Bronze, plus:</li>
+          <li>Featured directory listing</li>
+          <li>2 free training workshop seats per year</li>
+          <li>25% discount on advertising packages</li>
+          <li>Eligible for home-page business spotlight</li>
+          <li>Priority event registration</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+      </dialog>
+
+      <dialog id="modal-gold">
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+          <li>Everything in Silver, plus:</li>
+          <li>Premium spotlight placement on home page</li>
+          <li>Unlimited training workshop seats</li>
+          <li>Free annual event sponsorship slot</li>
+          <li>Exclusive executive networking dinners</li>
+          <li>Full-page newsletter feature once per year</li>
+          <li>Dedicated social media promotion monthly</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+      </dialog>
     </main>
+
     <footer class="site-footer">
       <div class="footer-grid">
         <div class="footer-contact">
