@@ -66,7 +66,8 @@
     gap: 1rem;
   }
 
-  .contact-form label:nth-child(n+3) {
+  .contact-form label:nth-child(n+3),
+  .contact-form fieldset {
     grid-column: 1 / -1;
   }
 

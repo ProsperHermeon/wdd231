@@ -35,7 +35,7 @@ const recipes = [
     category: "Main",
     cuisine: "Mexican",
     time: "25 min",
-    image: "https://www.themealdb.com/images/media/meals/ypxvwv1505856636.jpg",
+    image: "https://www.themealdb.com/images/media/meals/ypxvwv1505333929.jpg",
     description: "Seasoned ground beef in warm corn tortillas topped with fresh salsa, cheese, lettuce, and sour cream.",
     ingredients: ["Ground beef", "Tortillas", "Cheddar cheese", "Lettuce", "Tomato", "Sour cream", "Cumin", "Chili powder"]
   },
@@ -85,7 +85,7 @@ const recipes = [
     category: "Dessert",
     cuisine: "French",
     time: "25 min",
-    image: "https://www.themealdb.com/images/media/meals/xvsurp1511719182.jpg",
+    image: "https://www.themealdb.com/images/media/meals/twspvx1511784937.jpg",
     description: "Individual warm chocolate cakes with a molten center, dusted with powdered sugar and served with cream.",
     ingredients: ["Dark chocolate", "Butter", "Eggs", "Sugar", "Flour", "Vanilla extract", "Powdered sugar", "Cream"]
   },
@@ -175,7 +175,7 @@ const recipes = [
     category: "Dessert",
     cuisine: "French",
     time: "50 min",
-    image: "https://www.themealdb.com/images/media/meals/d882j21583465702.jpg",
+    image: "https://www.themealdb.com/images/media/meals/uryqru1511798039.jpg",
     description: "Silky vanilla custard with a perfectly caramelized sugar crust that cracks at the tap of a spoon.",
     ingredients: ["Heavy cream", "Egg yolks", "Sugar", "Vanilla bean", "Salt", "Butter", "Milk", "Cornstarch"]
   }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TasteBud | Discover World Recipes</title>
+    <title>Join TasteBud | Discover World Recipes</title>
     <meta
       name="description"
       content="TasteBud helps you discover delicious recipes from around the world. Browse, search, and save your favorites."
@@ -86,9 +86,9 @@
         <div id="featured-grid" class="card-grid"></div>
       </section>
 
-      <section aria-labelledby="contact-heading" class="contact-section">
-        <h2 id="contact-heading">Get in Touch</h2>
-        <p>Have a recipe to share or a question? We would love to hear from you.</p>
+      <section aria-labelledby="join-heading" class="contact-section">
+        <h2 id="join-heading">Join TasteBud</h2>
+        <p>Become a member to unlock exclusive recipes, meal plans, and community features.</p>
         <form method="get" action="thankyou.html" class="contact-form">
           <label>
             First Name
@@ -115,6 +115,17 @@
             />
           </label>
           <label>
+            Position / Title
+            <input
+              type="text"
+              name="title"
+              required
+              autocomplete="organization-title"
+              placeholder="Home Chef"
+              title="Enter your title or role"
+            />
+          </label>
+          <label>
             Email
             <input
               type="email"
@@ -126,17 +137,59 @@
             />
           </label>
           <label>
-            Message
+            Mobile Phone
+            <input
+              type="tel"
+              name="phone"
+              required
+              autocomplete="tel"
+              placeholder="(555) 123-4567"
+              title="Enter a valid phone number e.g. (555) 123-4567"
+              pattern="[\d\(\)\-\+\s]{7,}"
+            />
+          </label>
+          <label>
+            Organization / Business Name
+            <input
+              type="text"
+              name="organization"
+              required
+              autocomplete="organization"
+              placeholder="TasteBud Kitchen"
+              title="Enter your organization or business name"
+            />
+          </label>
+          <fieldset>
+            <legend>Membership Level</legend>
+            <label>
+              <input type="radio" name="level" value="np" required />
+              NP &mdash; Free (Non-Profit)
+            </label>
+            <label>
+              <input type="radio" name="level" value="bronze" />
+              Bronze &mdash; $5/month
+            </label>
+            <label>
+              <input type="radio" name="level" value="silver" />
+              Silver &mdash; $15/month
+            </label>
+            <label>
+              <input type="radio" name="level" value="gold" />
+              Gold &mdash; $30/month
+            </label>
+          </fieldset>
+          <label>
+            Tell Us About Yourself
             <textarea
               name="message"
               required
-              rows="4"
-              placeholder="Tell us about your favorite dish or ask a question…"
-              title="Write your message"
+              rows="3"
+              placeholder="What cuisines do you love? Any dietary preferences?"
+              title="Write a short message about yourself"
             ></textarea>
           </label>
           <input type="hidden" name="timestamp" id="timestamp" />
-          <button type="submit">Send Message</button>
+          <button type="submit">Join Now</button>
         </form>
       </section>
     </main>

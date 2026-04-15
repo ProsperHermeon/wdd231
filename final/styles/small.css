@@ -495,6 +495,34 @@ main > section > h2 {
   min-height: 80px;
 }
 
+.contact-form fieldset {
+  border: 2px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  margin: 0;
+}
+
+.contact-form fieldset legend {
+  font-weight: 700;
+  padding: 0 0.4rem;
+}
+
+.contact-form fieldset label {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0.35rem 0;
+}
+
+.contact-form fieldset input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--clr-primary);
+  flex-shrink: 0;
+}
+
 .contact-form button[type="submit"] {
   font-family: var(--font);
   font-size: 1rem;
