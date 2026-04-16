@@ -16,7 +16,7 @@
     width: auto;
     max-height: none !important;
     overflow: visible;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
     border-radius: 0;
     margin-left: auto;
   }
@@ -39,7 +39,7 @@
 
   .site-nav a:hover {
     background: var(--color-bg);
-    border-left-color: transparent;
+    border-left-color: rgba(0, 0, 0, 0);
     color: var(--color-accent);
   }
 
