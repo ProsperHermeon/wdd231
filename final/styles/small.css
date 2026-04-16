@@ -209,11 +209,14 @@ main {
   text-align: center;
 }
 
-.hero-content h1 {
+.hero-title {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   color: #fff;
   margin: 0 0 0.6rem;
   line-height: 1.2;
+  border: none;
+  padding: 0;
+  display: block;
 }
 
 .hero-sub {
