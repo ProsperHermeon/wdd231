@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TasteBud — Site Plan | WDD 231</title>
+    <meta
+      name="description"
+      content="Site plan for TasteBud, a world-recipe discovery site built for WDD 231: site name, purpose, scenarios, color schema, typography, and wireframes."
+    />
+    <meta name="author" content="Prosper" />
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/siteplan.css" />
+  </head>
+  <body>
+    <header class="plan-header">
+      <div class="plan-header-inner">
+        <a href="index.html" class="back-link">&larr; Back to TasteBud</a>
+        <h1>TasteBud — Site Plan</h1>
+        <p class="subtitle">WDD 231 Individual Project &middot; Prosper</p>
+      </div>
+    </header>
+
+    <main class="plan-main">
+      <section class="card" aria-labelledby="name-heading">
+        <h2 id="name-heading">Site Name</h2>
+        <p class="lead"><strong>TasteBud</strong></p>
+        <p>
+          The name is short, memorable, and instantly evokes taste, flavor, and
+          the pleasure of discovering food. It pairs cleanly with a logo and
+          signals the site's focus on world recipes at a glance.
+        </p>
+        <p class="muted">
+          Optional domain idea: <em>tastebud-recipes.com</em>
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="purpose-heading">
+        <h2 id="purpose-heading">Site Purpose</h2>
+        <p>
+          TasteBud is a recipe-discovery hub offering a curated collection of
+          18 world-class recipes. Visitors can browse featured recipes on the
+          home page, filter recipes by category and cuisine, search by
+          keyword, open a detail view with ingredients, steps, cook time and
+          servings, and save favorites to revisit later. A membership form
+          lets users join for exclusive recipes, meal plans, and community
+          features.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="scenarios-heading">
+        <h2 id="scenarios-heading">Scenarios</h2>
+        <p>
+          Questions the target audience is likely to bring to the site:
+        </p>
+        <ul class="scenarios">
+          <li>
+            "I want to cook something new tonight — how can I browse world
+            recipes and narrow them down by cuisine?"
+          </li>
+          <li>
+            "I found a few recipes I love — how do I save them so I can find
+            them again next week?"
+          </li>
+          <li>
+            "What extra benefits do I get if I become a TasteBud member?"
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="palette-heading">
+        <h2 id="palette-heading">Color Schema</h2>
+        <p>
+          The palette is built around a warm, kitchen-friendly terracotta on
+          a cream background, with near-black for strong text and warm gray
+          for secondary copy.
+        </p>
+        <dl class="palette">
+          <div class="palette-row">
+            <dt>
+              <span class="swatch swatch-primary" aria-hidden="true"></span>
+              #e05a2b &mdash; Terracotta (primary)
+            </dt>
+            <dd>
+              Links, primary buttons and CTAs, the active nav item, and
+              section-heading accent underlines.
+            </dd>
+          </div>
+          <div class="palette-row">
+            <dt>
+              <span class="swatch swatch-text" aria-hidden="true"></span>
+              #1c1917 &mdash; Near-black
+            </dt>
+            <dd>Hero and footer backgrounds, and all body text.</dd>
+          </div>
+          <div class="palette-row">
+            <dt>
+              <span class="swatch swatch-bg" aria-hidden="true"></span>
+              #faf8f5 &mdash; Cream
+            </dt>
+            <dd>Overall page background.</dd>
+          </div>
+          <div class="palette-row">
+            <dt>
+              <span class="swatch swatch-surface" aria-hidden="true"></span>
+              #ffffff &mdash; White
+            </dt>
+            <dd>Card and section surface panels.</dd>
+          </div>
+          <div class="palette-row">
+            <dt>
+              <span class="swatch swatch-muted" aria-hidden="true"></span>
+              #57534e &mdash; Warm gray
+            </dt>
+            <dd>Secondary and muted text.</dd>
+          </div>
+        </dl>
+        <p class="muted">
+          This site plan page applies the same palette: cream page
+          background, near-black text, white surface panels, terracotta
+          heading underlines and links, and warm-gray muted notes.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="type-heading">
+        <h2 id="type-heading">Typography</h2>
+        <p>
+          TasteBud uses a single typeface: <strong>Inter</strong>, loaded
+          from Google Fonts. Headings use weights 600 and 700; body text uses
+          weight 400. Inter was chosen for its clean, modern, highly legible
+          feel — it works equally well in card titles, recipe lists, and
+          long-form copy.
+        </p>
+        <article class="type-sample">
+          <p class="sample-heading">Aa &mdash; Inter 700</p>
+          <p class="sample-sub">Aa &mdash; Inter 600</p>
+          <p class="sample-body">
+            The quick brown fox jumps over the lazy dog. &mdash; Inter 400
+          </p>
+        </article>
+      </section>
+
+      <section class="card wireframe-card" aria-labelledby="wire-heading">
+        <h2 id="wire-heading">Wireframe</h2>
+        <p>
+          Hand-drawn wireframes for the TasteBud home page, showing layout
+          at two breakpoints.
+        </p>
+        <div class="wireframes">
+          <figure>
+            <img
+              src="images/wireframe-mobile.png"
+              alt="Hand-drawn wireframe of the TasteBud home page on a mobile viewport"
+            />
+            <figcaption>Mobile (small) view</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/wireframe-desktop.png"
+              alt="Hand-drawn wireframe of the TasteBud home page on a desktop viewport"
+            />
+            <figcaption>Desktop (wide) view</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="valid-heading">
+        <h2 id="valid-heading">Valid HTML, CSS &amp; Accessibility</h2>
+        <p>
+          This document has been written to pass the W3C HTML and CSS
+          validators with zero errors. It uses a single <code>h1</code>
+          followed by logical <code>h2</code> section headings, every
+          <code>img</code> has descriptive alt text, and the color
+          combinations (near-black on cream, white-on-terracotta buttons,
+          warm gray for muted notes) meet WCAG AA contrast. The page title
+          above &mdash; "TasteBud — Site Plan | WDD 231" &mdash; identifies
+          both the site and the assignment.
+        </p>
+      </section>
+    </main>
+
+    <footer class="plan-footer">
+      <p>
+        &copy; <span id="currentyear"></span> TasteBud &mdash; Prosper |
+        WDD 231
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("currentyear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
