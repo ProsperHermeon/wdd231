@@ -234,7 +234,7 @@ a:focus-visible {
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 0.3rem !important;
-  color: var(--clr-primary);
+  color: var(--clr-primary-dark);
 }
 
 .sample-body {

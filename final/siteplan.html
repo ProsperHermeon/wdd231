@@ -10,6 +10,11 @@
     />
     <meta name="author" content="Prosper" />
 
+    <meta property="og:title" content="TasteBud — Site Plan | WDD 231 Individual Project" />
+    <meta property="og:description" content="The planning document for TasteBud, a world-recipe discovery site: site name, purpose, scenarios, color schema, typography, and home-page wireframes." />
+    <meta property="og:image" content="https://prosperhermeon.github.io/wdd231/final/images/favicon.svg" />
+    <meta property="og:url" content="https://prosperhermeon.github.io/wdd231/final/siteplan.html" />
+
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +28,9 @@
   <body>
     <header class="plan-header">
       <div class="plan-header-inner">
-        <a href="index.html" class="back-link">&larr; Back to TasteBud</a>
+        <nav aria-label="Site plan navigation">
+          <a href="index.html" class="back-link">&larr; Back to TasteBud</a>
+        </nav>
         <h1>TasteBud — Site Plan</h1>
         <p class="subtitle">WDD 231 Individual Project &middot; Prosper</p>
       </div>
@@ -194,9 +201,6 @@
       </p>
     </footer>
 
-    <script>
-      document.getElementById("currentyear").textContent =
-        new Date().getFullYear();
-    </script>
+    <script src="scripts/siteplan.js" defer></script>
   </body>
 </html>
